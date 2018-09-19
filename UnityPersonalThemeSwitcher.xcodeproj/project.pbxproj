@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9FCDD992152F32E00BDBBA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDD982152F32E00BDBBA0 /* AppDelegate.m */; };
+		D9FCDD9C2152F32E00BDBBA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDD9B2152F32E00BDBBA0 /* ViewController.m */; };
+		D9FCDD9E2152F34900BDBBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */; };
+		D9FCDDA12152F34900BDBBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */; };
+		D9FCDDA42152F34900BDBBA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDA32152F34900BDBBA0 /* main.m */; };
+		D9FCDDAF2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDAE2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m */; };
+		D9FCDDBA2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9FCDDAB2152F34B00BDBBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9FCDD8C2152F32D00BDBBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9FCDD932152F32D00BDBBA0;
+			remoteInfo = UnityPersonalThemeSwitcher;
+		};
+		D9FCDDB62152F34C00BDBBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9FCDD8C2152F32D00BDBBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9FCDD932152F32D00BDBBA0;
+			remoteInfo = UnityPersonalThemeSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9FCDD942152F32E00BDBBA0 /* UnityPersonalThemeSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityPersonalThemeSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FCDD972152F32E00BDBBA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9FCDD982152F32E00BDBBA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9FCDD9A2152F32E00BDBBA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9FCDD9B2152F32E00BDBBA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9FCDDA02152F34900BDBBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9FCDDA22152F34900BDBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FCDDA32152F34900BDBBA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnityPersonalThemeSwitcher.entitlements; sourceTree = "<group>"; };
+		D9FCDDAA2152F34B00BDBBA0 /* UnityPersonalThemeSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPersonalThemeSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FCDDAE2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityPersonalThemeSwitcherTests.m; sourceTree = "<group>"; };
+		D9FCDDB02152F34C00BDBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FCDDB52152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPersonalThemeSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityPersonalThemeSwitcherUITests.m; sourceTree = "<group>"; };
+		D9FCDDBB2152F34C00BDBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9FCDD912152F32D00BDBBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDA72152F34B00BDBBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDB22152F34C00BDBBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9FCDD8B2152F32D00BDBBA0 = {
+			isa = PBXGroup;
+			children = (
+				D9FCDD962152F32E00BDBBA0 /* UnityPersonalThemeSwitcher */,
+				D9FCDDAD2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests */,
+				D9FCDDB82152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */,
+				D9FCDD952152F32E00BDBBA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9FCDD952152F32E00BDBBA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCDD942152F32E00BDBBA0 /* UnityPersonalThemeSwitcher.app */,
+				D9FCDDAA2152F34B00BDBBA0 /* UnityPersonalThemeSwitcherTests.xctest */,
+				D9FCDDB52152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9FCDD962152F32E00BDBBA0 /* UnityPersonalThemeSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCDD972152F32E00BDBBA0 /* AppDelegate.h */,
+				D9FCDD982152F32E00BDBBA0 /* AppDelegate.m */,
+				D9FCDD9A2152F32E00BDBBA0 /* ViewController.h */,
+				D9FCDD9B2152F32E00BDBBA0 /* ViewController.m */,
+				D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */,
+				D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */,
+				D9FCDDA22152F34900BDBBA0 /* Info.plist */,
+				D9FCDDA32152F34900BDBBA0 /* main.m */,
+				D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */,
+			);
+			path = UnityPersonalThemeSwitcher;
+			sourceTree = "<group>";
+		};
+		D9FCDDAD2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCDDAE2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m */,
+				D9FCDDB02152F34C00BDBBA0 /* Info.plist */,
+			);
+			path = UnityPersonalThemeSwitcherTests;
+			sourceTree = "<group>";
+		};
+		D9FCDDB82152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */,
+				D9FCDDBB2152F34C00BDBBA0 /* Info.plist */,
+			);
+			path = UnityPersonalThemeSwitcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9FCDD932152F32D00BDBBA0 /* UnityPersonalThemeSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FCDDBE2152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcher" */;
+			buildPhases = (
+				D9FCDD902152F32D00BDBBA0 /* Sources */,
+				D9FCDD912152F32D00BDBBA0 /* Frameworks */,
+				D9FCDD922152F32D00BDBBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnityPersonalThemeSwitcher;
+			productName = UnityPersonalThemeSwitcher;
+			productReference = D9FCDD942152F32E00BDBBA0 /* UnityPersonalThemeSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9FCDDA92152F34B00BDBBA0 /* UnityPersonalThemeSwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FCDDC12152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcherTests" */;
+			buildPhases = (
+				D9FCDDA62152F34B00BDBBA0 /* Sources */,
+				D9FCDDA72152F34B00BDBBA0 /* Frameworks */,
+				D9FCDDA82152F34B00BDBBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9FCDDAC2152F34B00BDBBA0 /* PBXTargetDependency */,
+			);
+			name = UnityPersonalThemeSwitcherTests;
+			productName = UnityPersonalThemeSwitcherTests;
+			productReference = D9FCDDAA2152F34B00BDBBA0 /* UnityPersonalThemeSwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9FCDDB42152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FCDDC42152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcherUITests" */;
+			buildPhases = (
+				D9FCDDB12152F34C00BDBBA0 /* Sources */,
+				D9FCDDB22152F34C00BDBBA0 /* Frameworks */,
+				D9FCDDB32152F34C00BDBBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9FCDDB72152F34C00BDBBA0 /* PBXTargetDependency */,
+			);
+			name = UnityPersonalThemeSwitcherUITests;
+			productName = UnityPersonalThemeSwitcherUITests;
+			productReference = D9FCDDB52152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9FCDD8C2152F32D00BDBBA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sergey A. Bazylev";
+				TargetAttributes = {
+					D9FCDD932152F32D00BDBBA0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D9FCDDA92152F34B00BDBBA0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D9FCDD932152F32D00BDBBA0;
+					};
+					D9FCDDB42152F34C00BDBBA0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D9FCDD932152F32D00BDBBA0;
+					};
+				};
+			};
+			buildConfigurationList = D9FCDD8F2152F32D00BDBBA0 /* Build configuration list for PBXProject "UnityPersonalThemeSwitcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9FCDD8B2152F32D00BDBBA0;
+			productRefGroup = D9FCDD952152F32E00BDBBA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9FCDD932152F32D00BDBBA0 /* UnityPersonalThemeSwitcher */,
+				D9FCDDA92152F34B00BDBBA0 /* UnityPersonalThemeSwitcherTests */,
+				D9FCDDB42152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9FCDD922152F32D00BDBBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FCDD9E2152F34900BDBBA0 /* Assets.xcassets in Resources */,
+				D9FCDDA12152F34900BDBBA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDA82152F34B00BDBBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDB32152F34C00BDBBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9FCDD902152F32D00BDBBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FCDD9C2152F32E00BDBBA0 /* ViewController.m in Sources */,
+				D9FCDDA42152F34900BDBBA0 /* main.m in Sources */,
+				D9FCDD992152F32E00BDBBA0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDA62152F34B00BDBBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FCDDAF2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FCDDB12152F34C00BDBBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FCDDBA2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9FCDDAC2152F34B00BDBBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9FCDD932152F32D00BDBBA0 /* UnityPersonalThemeSwitcher */;
+			targetProxy = D9FCDDAB2152F34B00BDBBA0 /* PBXContainerItemProxy */;
+		};
+		D9FCDDB72152F34C00BDBBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9FCDD932152F32D00BDBBA0 /* UnityPersonalThemeSwitcher */;
+			targetProxy = D9FCDDB62152F34C00BDBBA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FCDDA02152F34900BDBBA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9FCDDBC2152F34C00BDBBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D9FCDDBD2152F34C00BDBBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D9FCDDBF2152F34C00BDBBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnityPersonalThemeSwitcher/UnityPersonalThemeSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9FCDDC02152F34C00BDBBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnityPersonalThemeSwitcher/UnityPersonalThemeSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9FCDDC22152F34C00BDBBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnityPersonalThemeSwitcher.app/Contents/MacOS/UnityPersonalThemeSwitcher";
+			};
+			name = Debug;
+		};
+		D9FCDDC32152F34C00BDBBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnityPersonalThemeSwitcher.app/Contents/MacOS/UnityPersonalThemeSwitcher";
+			};
+			name = Release;
+		};
+		D9FCDDC52152F34C00BDBBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UnityPersonalThemeSwitcher;
+			};
+			name = Debug;
+		};
+		D9FCDDC62152F34C00BDBBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2384KU85YT;
+				INFOPLIST_FILE = UnityPersonalThemeSwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bzart.UnityPersonalThemeSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UnityPersonalThemeSwitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9FCDD8F2152F32D00BDBBA0 /* Build configuration list for PBXProject "UnityPersonalThemeSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FCDDBC2152F34C00BDBBA0 /* Debug */,
+				D9FCDDBD2152F34C00BDBBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FCDDBE2152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FCDDBF2152F34C00BDBBA0 /* Debug */,
+				D9FCDDC02152F34C00BDBBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FCDDC12152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FCDDC22152F34C00BDBBA0 /* Debug */,
+				D9FCDDC32152F34C00BDBBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FCDDC42152F34C00BDBBA0 /* Build configuration list for PBXNativeTarget "UnityPersonalThemeSwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FCDDC52152F34C00BDBBA0 /* Debug */,
+				D9FCDDC62152F34C00BDBBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9FCDD8C2152F32D00BDBBA0 /* Project object */;
+}
