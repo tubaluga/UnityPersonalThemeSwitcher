@@ -14,6 +14,7 @@
 		D9FCDDA42152F34900BDBBA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDA32152F34900BDBBA0 /* main.m */; };
 		D9FCDDAF2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDAE2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m */; };
 		D9FCDDBA2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */; };
+		D9FCDDCC2152F64B00BDBBA0 /* UnityApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		D9FCDDB52152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPersonalThemeSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityPersonalThemeSwitcherUITests.m; sourceTree = "<group>"; };
 		D9FCDDBB2152F34C00BDBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FCDDCA2152F64B00BDBBA0 /* UnityApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityApplication.h; sourceTree = "<group>"; };
+		D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				D9FCDDA22152F34900BDBBA0 /* Info.plist */,
 				D9FCDDA32152F34900BDBBA0 /* main.m */,
 				D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */,
+				D9FCDDCA2152F64B00BDBBA0 /* UnityApplication.h */,
+				D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */,
 			);
 			path = UnityPersonalThemeSwitcher;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				D9FCDD9C2152F32E00BDBBA0 /* ViewController.m in Sources */,
 				D9FCDDA42152F34900BDBBA0 /* main.m in Sources */,
+				D9FCDDCC2152F64B00BDBBA0 /* UnityApplication.m in Sources */,
 				D9FCDD992152F32E00BDBBA0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
