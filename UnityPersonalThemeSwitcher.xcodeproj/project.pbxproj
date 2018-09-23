@@ -14,7 +14,7 @@
 		D9FCDDA42152F34900BDBBA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDA32152F34900BDBBA0 /* main.m */; };
 		D9FCDDAF2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDAE2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests.m */; };
 		D9FCDDBA2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */; };
-		D9FCDDCC2152F64B00BDBBA0 /* UnityApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */; };
+		D9FCDDCC2152F64B00BDBBA0 /* UnityThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FCDDCB2152F64B00BDBBA0 /* UnityThemeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		D9FCDDB52152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPersonalThemeSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityPersonalThemeSwitcherUITests.m; sourceTree = "<group>"; };
 		D9FCDDBB2152F34C00BDBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9FCDDCA2152F64B00BDBBA0 /* UnityApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityApplication.h; sourceTree = "<group>"; };
-		D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityApplication.m; sourceTree = "<group>"; };
+		D9FCDDCA2152F64B00BDBBA0 /* UnityThemeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityThemeController.h; sourceTree = "<group>"; };
+		D9FCDDCB2152F64B00BDBBA0 /* UnityThemeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityThemeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				D9FCDD962152F32E00BDBBA0 /* UnityPersonalThemeSwitcher */,
-				D9FCDDAD2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests */,
 				D9FCDDB82152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */,
 				D9FCDD952152F32E00BDBBA0 /* Products */,
+				D9FCDDA32152F34900BDBBA0 /* main.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,10 +110,9 @@
 				D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */,
 				D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */,
 				D9FCDDA22152F34900BDBBA0 /* Info.plist */,
-				D9FCDDA32152F34900BDBBA0 /* main.m */,
 				D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */,
-				D9FCDDCA2152F64B00BDBBA0 /* UnityApplication.h */,
-				D9FCDDCB2152F64B00BDBBA0 /* UnityApplication.m */,
+				D9FCDDCA2152F64B00BDBBA0 /* UnityThemeController.h */,
+				D9FCDDCB2152F64B00BDBBA0 /* UnityThemeController.m */,
 			);
 			path = UnityPersonalThemeSwitcher;
 			sourceTree = "<group>";
@@ -130,6 +129,7 @@
 		D9FCDDB82152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D9FCDDAD2152F34C00BDBBA0 /* UnityPersonalThemeSwitcherTests */,
 				D9FCDDB92152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests.m */,
 				D9FCDDBB2152F34C00BDBBA0 /* Info.plist */,
 			);
@@ -203,6 +203,11 @@
 				TargetAttributes = {
 					D9FCDD932152F32D00BDBBA0 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					D9FCDDA92152F34B00BDBBA0 = {
 						CreatedOnToolsVersion = 10.0;
@@ -267,7 +272,7 @@
 			files = (
 				D9FCDD9C2152F32E00BDBBA0 /* ViewController.m in Sources */,
 				D9FCDDA42152F34900BDBBA0 /* main.m in Sources */,
-				D9FCDDCC2152F64B00BDBBA0 /* UnityApplication.m in Sources */,
+				D9FCDDCC2152F64B00BDBBA0 /* UnityThemeController.m in Sources */,
 				D9FCDD992152F32E00BDBBA0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +435,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = UnityPersonalThemeSwitcher/UnityPersonalThemeSwitcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2384KU85YT;
@@ -448,7 +452,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = UnityPersonalThemeSwitcher/UnityPersonalThemeSwitcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2384KU85YT;

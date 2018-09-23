@@ -6,14 +6,17 @@
 //  Copyright © 2018 Sergey A. Bazylev. All rights reserved.
 //
 
+#import "UnityThemeController.h"
 #import "ViewController.h"
 
 @implementation ViewController
 
+UnityThemeController *unityThemeController = nil;
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	// Do any additional setup after loading the view.
+	unityThemeController = [[UnityThemeController alloc] init];
 }
 
 
@@ -23,5 +26,30 @@
 	// Update the view, if already loaded.
 }
 
+- (IBAction)onButtonClick:(id)sender {
+	
+	[unityThemeController open:@"/Applications/Unity/Unity.app/Contents/MacOS/Unity"];
+	
+	NSString *modeText = nil;
+	
+	switch (unityThemeController.unityUiMode) {
+		case StandardMode:
+			modeText = @"Standard mode";
+			break;
+			
+		case DarkMode:
+			modeText = @"Dark mode";
+			break;
+			
+		default: modeText = @"Undefined mode";
+			break;
+	}
+	
+	_modeLabel.stringValue = modeText;
+}
+- (IBAction)onSwitchThemeClick:(id)sender {
+	
+	[unityThemeController switchUiMode];
+}
 
 @end
