@@ -11,6 +11,7 @@
 @interface ViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *modeLabel;
+@property (weak) IBOutlet NSProgressIndicator *processSpinner;
 
 @end
 
