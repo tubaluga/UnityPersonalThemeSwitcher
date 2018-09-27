@@ -32,6 +32,7 @@ static NSString *defaultUnityPath = @"/Applications/Unity/Unity.app/Contents/Mac
 	[_processSpinner startAnimation: self];
 	[_processSpinner setHidden: false];
 	[_buttonSwitchTheme setEnabled: false];
+	_unity3dPathLabel.stringValue = @"";
 	
 	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
 		UnityThemeController *controller = [[UnityThemeController alloc] init];
