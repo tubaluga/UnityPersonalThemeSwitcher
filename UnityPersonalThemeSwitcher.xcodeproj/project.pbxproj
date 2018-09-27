@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D90B65AF215D8B27008D6889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D9FCDD942152F32E00BDBBA0 /* UnityPersonalThemeSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityPersonalThemeSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FCDD972152F32E00BDBBA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9FCDD982152F32E00BDBBA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 				D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */,
 				D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */,
 				D9FCDDA22152F34900BDBBA0 /* Info.plist */,
+				D90B65AF215D8B27008D6889 /* README.md */,
 				D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */,
 				D9FCDDCA2152F64B00BDBBA0 /* UnityThemeController.h */,
 				D9FCDDCB2152F64B00BDBBA0 /* UnityThemeController.m */,
