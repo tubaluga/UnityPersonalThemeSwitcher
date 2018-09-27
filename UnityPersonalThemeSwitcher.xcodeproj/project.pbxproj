@@ -87,6 +87,7 @@
 				D9FCDD962152F32E00BDBBA0 /* UnityPersonalThemeSwitcher */,
 				D9FCDDB82152F34C00BDBBA0 /* UnityPersonalThemeSwitcherUITests */,
 				D9FCDD952152F32E00BDBBA0 /* Products */,
+				D90B65AF215D8B27008D6889 /* README.md */,
 				D9FCDDA32152F34900BDBBA0 /* main.m */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 				D9FCDD9D2152F34900BDBBA0 /* Assets.xcassets */,
 				D9FCDD9F2152F34900BDBBA0 /* Main.storyboard */,
 				D9FCDDA22152F34900BDBBA0 /* Info.plist */,
-				D90B65AF215D8B27008D6889 /* README.md */,
 				D9FCDDA52152F34900BDBBA0 /* UnityPersonalThemeSwitcher.entitlements */,
 				D9FCDDCA2152F64B00BDBBA0 /* UnityThemeController.h */,
 				D9FCDDCB2152F64B00BDBBA0 /* UnityThemeController.m */,
