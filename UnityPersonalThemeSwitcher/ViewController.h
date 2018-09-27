@@ -10,8 +10,13 @@
 
 @interface ViewController : NSViewController
 
+- (void) processDetectCurrentUnityTheme: (NSString *)path;
+- (void) processPathUnityFile: (NSString *)path;
+
 @property (weak) IBOutlet NSTextField *modeLabel;
 @property (weak) IBOutlet NSProgressIndicator *processSpinner;
+@property (weak) IBOutlet NSButton *buttonSwitchTheme;
+@property (weak) IBOutlet NSTextField *unity3dPathLabel;
 
 @end
 

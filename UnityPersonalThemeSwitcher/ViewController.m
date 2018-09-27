@@ -11,79 +11,98 @@
 
 @implementation ViewController
 
-UnityThemeController *unityThemeController = nil;
+static NSString *defaultUnityPath = @"/Applications/Unity/Unity.app/Contents/MacOS/Unity";
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	unityThemeController = [[UnityThemeController alloc] init];
+	[self processDetectCurrentUnityTheme: defaultUnityPath];
 }
-
 
 - (void)setRepresentedObject:(id)representedObject {
 	[super setRepresentedObject:representedObject];
-	
-	// Update the view, if already loaded.
 }
 
-- (IBAction)onButtonClick:(id)sender {
+- (IBAction)onSwitchThemeClick:(id)sender {
+	[self processPathUnityFile: defaultUnityPath];
+}
+
+- (void)processDetectCurrentUnityTheme:(NSString *)path { 
 	
-	NSOperationQueue *operationQueue = [NSOperationQueue mainQueue];
+	[_processSpinner startAnimation: self];
+	[_processSpinner setHidden: false];
+	[_buttonSwitchTheme setEnabled: false];
 	
 	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
 		UnityThemeController *controller = [[UnityThemeController alloc] init];
 		
-		[controller open:@"/Applications/Unity/Unity.app/Contents/MacOS/Unity"];
+		[controller open: path];
 		
 		NSString *modeText = nil;
 		
 		switch (controller.unityUiMode) {
 			case StandardMode:
-				modeText = @"Standard mode";
+				modeText = @"Standard";
 				break;
 				
 			case DarkMode:
-				modeText = @"Dark mode";
+				modeText = @"Dark";
 				break;
 				
-			default: modeText = @"Undefined mode";
+			default: modeText = @"Undefined";
 				break;
 		}
 		
 		self->_modeLabel.stringValue = modeText;
+		self->_unity3dPathLabel.stringValue = [@"Unity3d path: " stringByAppendingString: path];
+		[self->_processSpinner stopAnimation: self];
+		[self->_processSpinner setHidden: true];
+		[self->_buttonSwitchTheme setEnabled: true];
 	}];
 	
-	[operation setCompletionBlock: ^{
-		NSLog(@"Success operation");		
-	}];
-	
-	[operationQueue addOperation:operation];
-	
-	//[operation start];
-	
-	/*
-	 [unityThemeController open:@"/Applications/Unity/Unity.app/Contents/MacOS/Unity"];
-	 
-	 NSString *modeText = nil;
-	 
-	 switch (unityThemeController.unityUiMode) {
-	 case StandardMode:
-	 modeText = @"Standard mode";
-	 break;
-	 
-	 case DarkMode:
-	 modeText = @"Dark mode";
-	 break;
-	 
-	 default: modeText = @"Undefined mode";
-	 break;
-	 }
-	 
-	 _modeLabel.stringValue = modeText;*/
+	[ [NSOperationQueue mainQueue] addOperation:operation];
 }
-- (IBAction)onSwitchThemeClick:(id)sender {
+
+- (void)processPathUnityFile:(NSString *)path {
 	
-	[unityThemeController switchUiMode];
+	[_processSpinner startAnimation: self];
+	[_processSpinner setHidden: false];
+	[_buttonSwitchTheme setEnabled: false];
+	
+	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+		UnityThemeController *controller = [[UnityThemeController alloc] init];
+		
+		[controller open: path];
+		
+		NSString *modeText = nil;
+		
+		if (controller.unityUiMode == StandardMode || controller.unityUiMode == DarkMode) {
+			[controller switchUiMode];
+			
+			[controller open: path];
+			
+			switch (controller.unityUiMode) {
+				case StandardMode:
+					modeText = @"Standard";
+					break;
+					
+				case DarkMode:
+					modeText = @"Dark";
+					break;
+					
+				default: modeText = @"Undefined";
+					break;
+			}
+		}
+		
+		self->_modeLabel.stringValue = modeText;
+		[self->_processSpinner stopAnimation: self];
+		[self->_processSpinner setHidden: true];
+		[self->_buttonSwitchTheme setEnabled: true];
+	}];
+	
+	[ [NSOperationQueue mainQueue] addOperation:operation];
+	
 }
 
 @end
