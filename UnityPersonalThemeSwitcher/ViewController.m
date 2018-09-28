@@ -43,11 +43,11 @@ static NSString *defaultUnityPath = @"/Applications/Unity/Unity.app/Contents/Mac
 		
 		switch (controller.unityUiMode) {
 			case StandardMode:
-				modeText = @"Standard";
+				modeText = @"Personal";
 				break;
 				
 			case DarkMode:
-				modeText = @"Dark";
+				modeText = @"Professional";
 				break;
 				
 			default: modeText = @"Undefined";
